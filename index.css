@@ -1,0 +1,31 @@
+input,
+select,
+textarea {
+    display: block;
+    margin: 4px;
+}
+
+h2 {
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+h4 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 0.5em 4px;
+}
+
+.inline {
+    display: inline;
+}
+
+body {
+    background-color: white;
+}
+
+.form-container {
+    background-color: rgb(233, 232, 232);
+    width: 500px;
+    height: 100%;
+    margin: auto;
+}

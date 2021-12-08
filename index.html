@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <h2>Admission Form for Geekster</h2>
+    <div class="form-container">
+        <form action="">
+            <h4>Personal Info</h4>
+            <input type="text" class="inline" name="f_name" placeholder="first name" required>
+            <input type="text" class="inline" name="l_name" placeholder="Last name" required>
+            <br>
+            <input type="email" class="inline" name="email" placeholder="Email ID" required/>
+            <input type="number" class="inline" name="tel" placeholder="Phone Number" required pattern="[0-9]{4}-[0-9]{3}-[0-9]{3}" />
+            <br>
+            <select name="gender" class="inline" required>
+                <option value="" selected disabled>select gender</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="other">other</option>
+            </select>
+
+            <input type="date" class="inline" name="date_of_birth" max="2022-01-01" required>
+            <textarea name="address" placeholder="Address" id="" cols="40" rows="4"></textarea>
+            <hr>
+            <h4>Enducation Info</h4>
+            <select name="degree" id="">
+              <option value="" selected disabled>select degree</option>
+              <optgroup label="Bechelors">
+                <option value="">B.Tech</option>
+                <option value="">B.E</option>
+                <option value="">BCA</option>
+              </optgroup>
+              <optgroup label="Master">
+                <option value="">M.Tech</option>
+                <option value="">M.sc</option>
+                <option value="">MCA</option>
+              </optgroup>
+            </select>
+
+            <input type="text" name="college" placeholder="college name">
+            <input type="number" name="graduation_year" placeholder="year of graduation" max="2021" min="2019">
+            <input type="number" name="percentage" placeholder="percentage" min="0" max="100" step="0.1">
+            <input type="file" name="resume">
+            <hr>
+            <h4>Course Details</h4>
+            <input type="radio" class="inline" name="course_type">Fundamentals
+            <input type="radio" class="inline" name="course_type">Advanced
+            <br>
+            <input type="checkbox" class="inline" name="course_name">Web
+            <input type="checkbox" class="inline" name="course_name">DSA
+            <hr>
+            <input type="submit" class="inline" value="Apply for Admission">
+            <input type="reset" class="inline">
+
+        </form>
+    </div>
+</body>
+
+</html>
